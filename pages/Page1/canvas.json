@@ -1169,7 +1169,7 @@
                               "isVisible": true,
                               "label": "Category",
                               "serverSideFiltering": false,
-                              "options": "[\n  {\n    \"label\": \"Achievement\",\n    \"value\": \"Achievement\"\n  },\n  {\n    \"label\": \"New Joinee\",\n    \"value\": \"New Joinee\"\n  },\n  {\n    \"label\": \"Travel\",\n    \"value\": \"Travel\"\n  },\n\t{\n    \"label\": \"New Feature\",\n    \"value\": \"New Feature\"\n  },\n\t{\n\t\t\"label\": \"Announcement\",\n\t\t\"value\": \"Announcement\"\n\t},\n\t{\n    \"label\": \"Misc\",\n    \"value\": \"Misc\"\n  }\n]/"
+                              "options": "[\n  {\n    \"label\": \"Achievement\",\n    \"value\": \"Achievement\"\n  },\n  {\n    \"label\": \"New Joinee\",\n    \"value\": \"New Joinee\"\n  },\n  {\n    \"label\": \"Travel\",\n    \"value\": \"Travel\"\n  },\n\t{\n    \"label\": \"New Feature\",\n    \"value\": \"New Feature\"\n  },\n\t{\n\t\t\"label\": \"Announcement\",\n\t\t\"value\": \"Announcement\"\n\t},\n\t{\n    \"label\": \"Misc\",\n    \"value\": \"Misc\"\n  }\n]"
                             },
                             "customField2": {
                               "children": {},
@@ -1204,97 +1204,21 @@
                               "isSpellCheck": false,
                               "isVisible": true,
                               "label": "Content"
-                            },
-                            "__array_item__": {
-                              "children": {
-                                "label": {
-                                  "children": {},
-                                  "dataType": "string",
-                                  "fieldType": "Text Input",
-                                  "sourceData": "Misc",
-                                  "isCustomField": false,
-                                  "accessor": "label",
-                                  "identifier": "label",
-                                  "position": 0,
-                                  "originalIdentifier": "label",
-                                  "iconAlign": "left",
-                                  "isDisabled": false,
-                                  "isRequired": false,
-                                  "isSpellCheck": false,
-                                  "isVisible": true,
-                                  "label": "Label"
-                                },
-                                "value": {
-                                  "children": {},
-                                  "dataType": "string",
-                                  "fieldType": "Text Input",
-                                  "sourceData": "Misc",
-                                  "isCustomField": false,
-                                  "accessor": "value",
-                                  "identifier": "value",
-                                  "position": 1,
-                                  "originalIdentifier": "value",
-                                  "iconAlign": "left",
-                                  "isDisabled": false,
-                                  "isRequired": false,
-                                  "isSpellCheck": false,
-                                  "isVisible": true,
-                                  "label": "Value"
-                                }
-                              },
-                              "dataType": "object",
-                              "fieldType": "Object",
-                              "sourceData": {
-                                "label": "Misc",
-                                "value": "Misc"
-                              },
-                              "isCustomField": false,
-                              "accessor": "__array_item__",
-                              "identifier": "__array_item__",
-                              "position": -1,
-                              "originalIdentifier": "__array_item__",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isVisible": true,
-                              "label": "Array Item"
                             }
                           },
-                          "dataType": "array",
+                          "dataType": "object",
                           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                          "fieldType": "Array",
-                          "sourceData": [
-                            {
-                              "label": "Achievement",
-                              "value": "Achievement"
-                            },
-                            {
-                              "label": "New Joinee",
-                              "value": "New Joinee"
-                            },
-                            {
-                              "label": "Travel",
-                              "value": "Travel"
-                            },
-                            {
-                              "label": "New Feature",
-                              "value": "New Feature"
-                            },
-                            {
-                              "label": "Announcement",
-                              "value": "Announcement"
-                            },
-                            {
-                              "label": "Misc",
-                              "value": "Misc"
-                            }
-                          ],
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "name": "John",
+                            "date_of_birth": "20/02/1990",
+                            "employee_id": 1001
+                          },
                           "isCustomField": false,
                           "accessor": "__root_schema__",
                           "identifier": "__root_schema__",
                           "position": -1,
                           "originalIdentifier": "__root_schema__",
-                          "backgroundColor": "#FAFAFA",
-                          "isCollapsible": true,
                           "isDisabled": false,
                           "isRequired": false,
                           "isVisible": true,
@@ -1343,7 +1267,7 @@
                           "key": "schema.__root_schema__.defaultValue"
                         }
                       ],
-                      "sourceData": "[\n  {\n    \"label\": \"Achievement\",\n    \"value\": \"Achievement\"\n  },\n  {\n    \"label\": \"New Joinee\",\n    \"value\": \"New Joinee\"\n  },\n  {\n    \"label\": \"Travel\",\n    \"value\": \"Travel\"\n  },\n\t{\n    \"label\": \"New Feature\",\n    \"value\": \"New Feature\"\n  },\n\t{\n\t\t\"label\": \"Announcement\",\n\t\t\"value\": \"Announcement\"\n\t},\n\t{\n    \"label\": \"Misc\",\n    \"value\": \"Misc\"\n  }\n]",
+                      "sourceData": "{}",
                       "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "5c39qnhdjj",
