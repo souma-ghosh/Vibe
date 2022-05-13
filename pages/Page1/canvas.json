@@ -1186,7 +1186,8 @@
                               "isRequired": false,
                               "isSpellCheck": false,
                               "isVisible": true,
-                              "label": "Title"
+                              "label": "Title",
+                              "defaultValue": ""
                             },
                             "customField3": {
                               "children": {},
@@ -1196,14 +1197,50 @@
                               "isCustomField": true,
                               "accessor": "content",
                               "identifier": "customField3",
-                              "position": 5,
+                              "position": 6,
                               "originalIdentifier": "customField3",
                               "iconAlign": "left",
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": "{{((sourceData, formData, fieldState) => (JSONForm1.formData.select_contenttype === \"text\"))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "label": "Content"
+                            },
+                            "customField4": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (`{\n    \"label\": \"Text\",\n    \"value\": \"text\"\n }`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Select",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "select_contenttype",
+                              "identifier": "customField4",
+                              "position": 5,
+                              "originalIdentifier": "customField4",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Content Type",
+                              "serverSideFiltering": false,
+                              "options": "[\n  {\n    \"label\": \"Text\",\n    \"value\": \"text\"\n  },\n  {\n    \"label\": \"Image\",\n    \"value\": \"image\"\n  },\n  {\n    \"label\": \"Document\",\n    \"value\": \"document\"\n  }\n]"
+                            },
+                            "customField5": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "image_url",
+                              "identifier": "customField5",
+                              "position": 7,
+                              "originalIdentifier": "customField5",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": "{{((sourceData, formData, fieldState) => (JSONForm1.formData.select_contenttype === \"image\"))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "label": "Image URL"
                             }
                           },
                           "dataType": "object",
@@ -1233,6 +1270,12 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.isVisible"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -1265,6 +1308,15 @@
                         },
                         {
                           "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.isVisible"
                         }
                       ],
                       "sourceData": "{}",
