@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\ttry {\n\t\t\tawait createComment.run();\n\t\t\tgetComments.run();\n\t\t} catch(err) {\n\t\t\tshowAlert(err)\n\t\t}\n\t}",
+      "body": "async () => {\n\t\ttry {\n\t\t\tawait createComment.run();\n\t\t\tshowAlert(\"Comment posted!\");\n\t\t\tgetComments.run();\n\t\t} catch(err) {\n\t\t\tshowAlert(err)\n\t\t}\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\ttry {\n\t\t\tawait createComment.run();\n\t\t\tgetComments.run();\n\t\t} catch(err) {\n\t\t\tshowAlert(err)\n\t\t}\n\t}"
+      "async () => {\n\t\ttry {\n\t\t\tawait createComment.run();\n\t\t\tshowAlert(\"Comment posted!\");\n\t\t\tgetComments.run();\n\t\t} catch(err) {\n\t\t\tshowAlert(err)\n\t\t}\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

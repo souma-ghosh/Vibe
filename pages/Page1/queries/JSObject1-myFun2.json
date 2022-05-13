@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async (data) => {\n\t\tlet newsObj = {...data, likes: 0, createdAt: Date()};\n\t\tcreateNews.run(newsObj);\n\t\t//use async-await or promises\n\t}",
+      "body": "async (data) => {\n\t\tlet newsObj = {...data, likes: 0, createdAt: Date()};\n\t\tawait createNews.run();\n\t\t//use async-await or promises\n\t}",
       "jsArguments": [
         {
           "name": "data"
@@ -38,7 +38,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async (data) => {\n\t\tlet newsObj = {...data, likes: 0, createdAt: Date()};\n\t\tcreateNews.run(newsObj);\n\t\t//use async-await or promises\n\t}"
+      "async (data) => {\n\t\tlet newsObj = {...data, likes: 0, createdAt: Date()};\n\t\tawait createNews.run();\n\t\t//use async-await or promises\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
